@@ -124,7 +124,7 @@ deb: $(BUILDDIR)/gcs
 	cp -a copyright $(BUILDDIR)/package$(BASE_DIR)/webserv/copyright
 	cp -a GPLv2.txt $(BUILDDIR)/package$(BASE_DIR)/webserv/GPLv2.txt
 	chmod 0755 $(BUILDDIR)/package/usr/bin/gl-gcs
-	chmod 0755 package/usr/bin/multigcs
+	chmod 0755 $(BUILDDIR)/package/usr/bin/multigcs
 	chmod 0755 $(BUILDDIR)/package$(BASE_DIR)/clean-badmaps.sh
 	mkdir -p  $(BUILDDIR)/package/DEBIAN
 	echo "Package: multigcs" >  $(BUILDDIR)/package/DEBIAN/control
